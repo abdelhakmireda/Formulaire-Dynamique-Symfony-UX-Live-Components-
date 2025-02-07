@@ -4,6 +4,13 @@ Aujourd'hui, je vais vous guider à travers la création d'un formulaire dynamiq
 Cette approche, basée exclusivement sur **Symfony et Twig**, vous permettra de gérer des dépendances entre les champs de votre formulaire et d'afficher ou masquer des sections en fonction des interactions de l'utilisateur, **sans avoir à écrire une seule ligne de JavaScript**. 
 
 ---
+## 📌 Prérequis
+
+Avant de commencer, assurez-vous d'avoir :
+- Symfony installé
+- Composer installé
+- Une base de données configurée
+
 
 ## ✨ Installation de Symfony UX Live Components
 
@@ -12,8 +19,6 @@ Commençons par installer la librairie **Symfony UX Live Components** à l'aide 
 ```bash
 composer require symfony/ux-live-component
 ```
-
----
 
 ## 🏗️ Création du formulaire (**UtilisateurType**)
 
@@ -81,8 +86,6 @@ class UtilisateurType extends AbstractType
 
 ⚠️ **Important :** L'option **`mapped => false`** pour les champs dépendants est cruciale. Elle empêche Symfony de mapper directement ces champs à l'entité, car ils sont gérés dynamiquement.
 
----
-
 ## ⚙️ Création du composant **Live Component** (UtilisateurForm)
 
 Passons à la création du composant **Live Component**. Utilisez la commande :
@@ -134,7 +137,6 @@ Ouvrez le fichier **`templates/components/UtilisateurForm.html.twig`** et ajoute
 
 ⚠️ **Important :** L'attribut **`{{ attributes }}`** est crucial pour le bon fonctionnement du composant Live Component.
 
----
 
 ## 🚀 Utilisation du composant
 
@@ -149,7 +151,6 @@ Ouvrez le fichier **`templates/components/UtilisateurForm.html.twig`** et ajoute
 ```
 Où **`form`** est l'instance de votre formulaire pré-rempli.
 
----
 
 ## 🎯 Conclusion
 
@@ -161,6 +162,6 @@ Avec **Symfony UX Live Components**, la création de **formulaires dynamiques** 
 - 🔹 Facile à maintenir
 - 🔹 Aucune ligne de **JavaScript** nécessaire
 
-J'espère que cette documentation détaillée vous sera utile ! 🚀 
-N'hésitez pas à poser vos questions en cas de besoin. 👀
+📌 J'espère que cette documentation détaillée vous sera utile ! 🚀 
+📌 N'hésitez pas à poser vos questions en cas de besoin. 👀
 
