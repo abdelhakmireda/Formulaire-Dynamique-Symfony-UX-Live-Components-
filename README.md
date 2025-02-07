@@ -3,7 +3,6 @@
 Aujourd'hui, je vais vous guider à travers la création d'un formulaire dynamique et interactif dans votre application Symfony, en utilisant **Symfony UX Live Components**. 
 Cette approche, basée exclusivement sur **Symfony et Twig**, vous permettra de gérer des dépendances entre les champs de votre formulaire et d'afficher ou masquer des sections en fonction des interactions de l'utilisateur, **sans avoir à écrire une seule ligne de JavaScript**. 
 
----
 ## 📌 Prérequis
 
 Avant de commencer, assurez-vous d'avoir :
@@ -123,7 +122,6 @@ class UtilisateurForm extends AbstractController
 
 ⚠️ **Important :** L'attribut `#[AsLiveComponent]` est essentiel pour indiquer que ce composant est un **Live Component**.
 
----
 
 ## 🎨 Intégration du composant dans Twig (**UtilisateurForm.html.twig**)
 
